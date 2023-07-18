@@ -8,7 +8,8 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky install",
-    "lint": "lint-staged"
+    "lint": "lint-staged",
+    "gen-api": "swagger-typescript-api -p http://36.137.184.33:18080/zhhfApi/v2/api-docs -o ./src/apis -n index.ts --module-name-index 0 --union-enums"
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
@@ -49,6 +50,7 @@
     "stylelint-config-recommended-vue": "~1.4.0",
     "stylelint-config-standard": "~33.0.0",
     "stylelint-order": "~6.0.3",
+    "swagger-typescript-api": "^13.0.0",
     "typescript": "^5.0.2",
     "unplugin-auto-import": "^0.16.4",
     "unplugin-vue-components": "^0.25.1",
