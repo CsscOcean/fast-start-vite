@@ -7,7 +7,7 @@
 
 使用 fork 或者 使用[degit](https://github.com/Rich-Harris/degit)
 
-`npx degit Eveimo/fast-start-vite#main my-project`
+`npx degit https://github.com/CsscOcean/fast-start-vite/tree/main my-project`
 
 `cd my-project` `git init` `pnpm install`
 
