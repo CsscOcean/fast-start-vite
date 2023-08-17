@@ -1,16 +1,15 @@
-<script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue';
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <HelloWorld msg="element-plus" />
+  <RouterView></RouterView>
 </template>
 
 <style scoped lang="less">
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
+
 html,
 body,
 #app {
