@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "prepare": "husky install",
     "lint": "lint-staged",
-    "gen-api": "swagger-typescript-api -p http://36.137.184.33:18080/zhhfApi/v2/api-docs -o ./src/apis -n index.ts --module-name-index 0 --union-enums"
+    "gen-api": "swagger-typescript-api -p http://36.137.184.33:18080/zhhfApi/v2/api-docs -o ./src/apis -n index.ts --module-name-index 0 --union-enums --extract-request-params"
   },
   "dependencies": {
     "@icon-park/vue-next": "^1.4.2",
