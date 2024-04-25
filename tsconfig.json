@@ -9,7 +9,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "types": ["vite/client", "element-plus/global.d.ts"],
+    "types": ["vite/client"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",

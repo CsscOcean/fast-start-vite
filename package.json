@@ -12,8 +12,9 @@
     "gen-api": "swagger-typescript-api -p http://36.137.184.33:18080/zhhfApi/v2/api-docs -o ./src/apis -n index.ts --module-name-index 0 --union-enums --extract-request-params"
   },
   "dependencies": {
+    "@csstools/normalize.css": "^12.1.1",
     "@icon-park/vue-next": "^1.4.2",
-    "element-plus": "^2.3.7",
+    "ant-design-vue": "^4.2.0",
     "pinia": "^2.1.4",
     "pinia-plugin-persist": "^1.0.0",
     "vue": "^3.2.47",
@@ -23,10 +24,10 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.6",
     "@types/node": "^20.3.1",
-    "@types/postcss-pxtorem": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "~5.59.11",
     "@typescript-eslint/parser": "~5.59.11",
     "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
     "commitizen": "^4.3.0",
     "eslint": "~8.42.0",
     "eslint-config-prettier": "~8.8.0",
@@ -42,7 +43,6 @@
     "postcss": "^8.0.0",
     "postcss-html": "~1.5.0",
     "postcss-less": "^6.0.0",
-    "postcss-pxtorem": "^6.0.0",
     "prettier": "~2.8.8",
     "stylelint": "~15.7.0",
     "stylelint-config-html": "~1.1.0",
@@ -63,9 +63,6 @@
     "vue-tsc": "^1.4.2"
   },
   "pnpm": {
-    "patchedDependencies": {
-      "element-plus@2.3.7": "patches/element-plus@2.3.7.patch"
-    },
     "peerDependencyRules": {
       "allowedVersions": {
         "stylelint": "^15.7.0"
