@@ -40,6 +40,7 @@ import AppManageUrl from '@/assets/icons/menu/appManage.svg?url';
     <a-button type="ghost">Warning</a-button>
     <a-button type="dashed">Danger</a-button>
   </a-space>
+  <div class="!text-20px">Unocss</div>
 </template>
 
 <style lang="less" scoped>

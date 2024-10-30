@@ -7,10 +7,12 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 import svgLoader from 'vite-svg-loader';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
+import UnoCSS from 'unocss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    UnoCSS(),
     vue({
       template: {
         compilerOptions: {

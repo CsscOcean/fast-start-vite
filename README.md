@@ -8,7 +8,7 @@
 使用 fork 或者 使用[degit](https://github.com/Rich-Harris/degit)
 
 ```bash
-npx degit https://github.com/CsscOcean/fast-start-vite/tree/main my-project
+npx degit npx degit https://github.com/CsscOcean/fast-start-vite my-project
 
 cd my-project
 
@@ -29,25 +29,11 @@ pnpm run dev
 
 ### 组件
 
-- 页面组件库 [element-plus](https://element-plus.org/zh-CN/component/button.html)
-- Icon 组件库 [iconpark](https://iconpark.oceanengine.com/official)
+- 页面组件库 [antdv](https://www.antdv.com/components/overview)
+- Icon 组件[参照]('./src/components/VIcon/README.md')
 
-### svg 使用
+### Unocss 使用
 
-1. 下载 svg 到指定项目目录
-2. 使用 svg
+打开 [tailwindcss](https://tailwindcss.com/docs/installation) 直接使用里面的 class
 
-```vue
-<template>测试<BreadcrumbIcon /></template>
-
-<script setup lang="ts">
-import BreadcrumbIcon from './imgs/bread-crumb.svg';
-</script>
-
-<style>
-// svg 和文字对齐，可以通过
-svg {
-  vertical-align: -3px;
-}
-</style>
-```
+参照 [windicss](https://cn.windicss.org/)
