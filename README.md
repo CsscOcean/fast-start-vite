@@ -30,7 +30,7 @@ pnpm run dev
 ### 组件
 
 - 页面组件库 [antdv](https://www.antdv.com/components/overview)
-- Icon 组件[参照](src/components/VIcon/README.md')
+- Icon 组件[参照](src/components/VIcon/README.md)
 
 ### Unocss 使用
 
