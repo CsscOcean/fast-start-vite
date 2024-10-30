@@ -30,7 +30,7 @@ pnpm run dev
 ### 组件
 
 - 页面组件库 [antdv](https://www.antdv.com/components/overview)
-- Icon 组件[参照]('./src/components/VIcon/README.md')
+- Icon 组件[参照](src/components/VIcon/README.md')
 
 ### Unocss 使用
 
@@ -50,14 +50,16 @@ pnpm run dev
 
 ### 全局公共组件：/src/components 示例
 
+> 统一 V 开头
+
 ```bash
-  - [components]
-    - [Breadcrumb]
-      - index.vue
-    - [Hamburger]
-      - index.vue
-    - [SvgIcon]
-      - index.vue
+- [components]
+  - [Breadcrumb]
+    - index.vue
+  - [Hamburger]
+    - index.vue
+  - [SvgIcon]
+    - index.vue
 ```
 
 ### 业务页面内部封装的组件：以 /src/views/layout/components 示例
