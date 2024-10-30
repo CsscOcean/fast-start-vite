@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Aiming, Camera } from '@icon-park/vue-next';
 defineProps<{ msg: string }>();
 </script>
 
@@ -12,8 +11,7 @@ defineProps<{ msg: string }>();
   <el-button type="warning">Warning</el-button>
   <el-button type="danger">Danger</el-button>
   <h1>iconpark icon</h1>
-  <aiming theme="outline" size="24" fill="#333" :stroke-width="2" stroke-linejoin="bevel" />
-  <camera theme="outline" size="24" fill="#333" :stroke-width="2" stroke-linejoin="bevel" />
+  <Icon class="icon" icon="mdi:arrow-left" size="24" />
 </template>
 
 <style scoped lang="less">

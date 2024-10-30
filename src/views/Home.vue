@@ -1,20 +1,45 @@
 <script setup lang="ts">
-import { Dislike, Search, CloseOne, Close } from '@icon-park/vue-next';
+import SvgMySQL from '@/assets/icons/dataSource/MySQL.svg';
+import AppManage from '@/assets/icons/menu/appManage.svg';
+import AppManageUrl from '@/assets/icons/menu/appManage.svg?url';
 </script>
 
 <template>
-  <h5>
-    <dislike theme="outline" size="24" fill="#333" :stroke-width="2" stroke-linejoin="bevel" />
-    <search theme="outline" size="24" fill="#333" :stroke-width="2" stroke-linejoin="bevel" />
-    <close-one theme="outline" size="24" fill="#333" :stroke-width="2" stroke-linejoin="bevel" />
-    <close theme="outline" size="24" fill="#333" :stroke-width="2" stroke-linejoin="bevel" />
-  </h5>
-  <el-button>Default</el-button>
-  <el-button type="primary">Primary</el-button>
-  <el-button type="success">Success</el-button>
-  <el-button type="info">Info</el-button>
-  <el-button type="warning">Warning</el-button>
-  <el-button type="danger">Danger</el-button>
+  <a-space>
+    <VIcon icon="icon-park-outline:dislike" />
+    <VIcon icon="icon-park-outline:search" />
+    <VIcon icon="icon-park-outline:close-one" />
+    <VIcon icon="icon-park-outline:close" />
+    <VIcon icon="icon-park-outline:abdominal" />
+    <VIcon icon="svg:dataSource-MySQL" />
+    <VIcon>
+      <SvgMySQL width="1em" />
+    </VIcon>
+    <VIcon>
+      <AppManage width="1em" />
+    </VIcon>
+    <img :src="AppManageUrl" />
+  </a-space>
+  <div style="font-size: 24px">
+    <VIcon icon="svg:dataSource-MySQL" />
+    <VIcon>
+      <AppManage width="1em" />
+    </VIcon>
+    <span style="font-size: 16px">MySQL</span>
+    <VIcon icon="icon-park-outline:abdominal" />
+    <VIcon>
+      <SvgMySQL width="1em" />
+    </VIcon>
+  </div>
+  <br />
+  <a-space>
+    <a-button>Default</a-button>
+    <a-button type="primary">Primary</a-button>
+    <a-button type="link">Success</a-button>
+    <a-button type="text">Info</a-button>
+    <a-button type="ghost">Warning</a-button>
+    <a-button type="dashed">Danger</a-button>
+  </a-space>
 </template>
 
 <style lang="less" scoped>

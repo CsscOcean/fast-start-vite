@@ -6,16 +6,31 @@ import Components from 'unplugin-vue-components/vite';
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 import svgLoader from 'vite-svg-loader';
 import vueJsx from '@vitejs/plugin-vue-jsx';
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          // 将所有带短横线的标签名都视为自定义元素
+          isCustomElement: tag => ['iconify-icon'].includes(tag),
+        },
+      },
+    }),
     vueJsx(),
     svgLoader({
       svgoConfig: {
-        plugins: ['prefixIds'],
+        plugins: ['preset-default', 'prefixIds', 'removeDimensions'],
       },
+    }),
+    createSvgIconsPlugin({
+      // Specify the icon folder to be cached
+      iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+      // Specify symbolId format
+      symbolId: '[dir]-[name]',
+      svgoOptions: true,
     }),
     AutoImport({
       // Auto import functions from Vue, e.g. ref, reactive, toRef...
