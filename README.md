@@ -109,3 +109,5 @@ export { default as Sidebar } from './Sidebar';
 ### \*.less 文件命名规范
 
 > 统一使用 camelCase 命名风格
+
+### 风格[参照](https://cn.vuejs.org/style-guide/)
