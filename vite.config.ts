@@ -39,6 +39,9 @@ export default defineConfig({
       // 自动导入 Vue 相关函数，如：ref, reactive, toRef 等
       imports: ['vue'],
       dts: path.resolve(__dirname, './src/auto-imports.d.ts'),
+      eslintrc: {
+        enabled: true, // <-- this
+      },
     }),
     Components({
       resolvers: [AntDesignVueResolver({ importStyle: false })],

@@ -11,6 +11,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     // 需要放在最后才能覆盖和 prettier 冲突的规则
     'plugin:prettier/recommended',
+    './.eslintrc-auto-import.json',
   ],
   parser: 'vue-eslint-parser',
   parserOptions: {
